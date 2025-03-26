@@ -1,0 +1,120 @@
+.custom-footer {
+    /* background-image: radial-gradient(circle at 99% 33%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 46% 16%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 99% 25%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 57% 88%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 86%, transparent 86%, transparent 100%), radial-gradient(circle at 82% 78%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+     */
+    /* background-image: radial-gradient(circle at 99% 33%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 46% 16%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 99% 25%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 57% 88%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 86%, transparent 86%, transparent 100%), radial-gradient(circle at 82% 78%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0)); */
+
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* .custom-footer {
+    position: relative;
+    background: linear-gradient(90deg, rgb(10, 10, 10), rgb(20, 20, 20));
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    text-align: center;
+} */
+
+.custom-footer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: radial-gradient(circle, rgba(50, 50, 50, 0.5), rgba(30, 30, 30, 0.3), rgba(0, 0, 0, 0.2));
+    filter: blur(80px);
+    transform: translate(-50%, -50%);
+    animation: auraMove 6s infinite alternate ease-in-out;
+    z-index: -1;
+}
+
+@keyframes auraMove {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+.footer-logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-links h5,
+.footer-contact h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.footer-links ul li a:hover {
+    opacity: 1;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+        max-width: 80px;
+    }
+
+    .footer-brand p,
+    .footer-contact p {
+        font-size: 12px;
+    }
+
+    .footer-links h5,
+    .footer-contact h5 {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
