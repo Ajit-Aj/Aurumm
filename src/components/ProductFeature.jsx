@@ -4,7 +4,7 @@ import {
     FaSyncAlt, FaNetworkWired, FaFileInvoice, FaCog, FaBarcode, FaBoxes,
     FaShoppingCart, FaClipboardList, FaUsers, FaBuilding, FaCalendarCheck,
     FaChartLine, FaShieldAlt, FaBell, FaChartBar, FaLock
-} from "react-icons/fa"; // 16 Unique Icons
+} from "react-icons/fa"; 
 import "./product.css";
 
 const ProductFeature = () => {

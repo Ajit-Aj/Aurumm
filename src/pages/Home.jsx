@@ -15,9 +15,7 @@ const Home = () => {
         setScale(Math.max(0.6, 1 - scrollY / 800));
       });
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -74,7 +72,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-
         <FeatureCards />
         <br />
         <br />
