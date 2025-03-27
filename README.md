@@ -26,4 +26,4 @@ This will start the Vite server, and you can access your app at:
 👉 http://localhost:5173/
 
 
-
+https://c2mpncsp-5173.inc1.devtunnels.ms/
