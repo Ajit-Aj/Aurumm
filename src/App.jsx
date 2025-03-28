@@ -83,7 +83,7 @@ const App = () => {
         ))}
 
       <Router>
-        <div >
+        <div data-aos="zoom-out-up"  >
           <Navbar />
           <div className="container mt-4">
             <Routes>

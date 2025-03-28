@@ -54,6 +54,6 @@ body {
 
 body::selection {
     /* background: linear-gradient(45deg, #2E7D32, #FFB74D); */
-    background-color: #2E7D32;
-    color: white;
+    background-color: black;
+    color: rgba(226, 200, 54, 0.6);
 }

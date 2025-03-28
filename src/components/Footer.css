@@ -1,23 +1,11 @@
 .custom-footer {
-    /* background-image: radial-gradient(circle at 99% 33%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 46% 16%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 99% 25%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 57% 88%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 86%, transparent 86%, transparent 100%), radial-gradient(circle at 82% 78%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
-     */
-    /* background-image: radial-gradient(circle at 99% 33%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 46% 16%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 99% 25%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 57% 88%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 86%, transparent 86%, transparent 100%), radial-gradient(circle at 82% 78%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0)); */
-
     background-color: black;
     color: white;
     padding: 40px 0;
     font-family: Arial, sans-serif;
-}
-
-/* .custom-footer {
     position: relative;
-    background: linear-gradient(90deg, rgb(10, 10, 10), rgb(20, 20, 20));
-    color: white;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
     text-align: center;
-} */
+}
 
 .custom-footer::before {
     content: "";
@@ -35,7 +23,6 @@
     0% {
         transform: translate(-50%, -50%) scale(1);
     }
-
     100% {
         transform: translate(-50%, -50%) scale(1.1);
     }
@@ -46,16 +33,16 @@
     margin-bottom: 10px;
 }
 
-.footer-brand p {
-    font-size: 14px;
-    opacity: 0.8;
-}
-
 .footer-brand,
 .footer-links,
 .footer-contact {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    opacity: 0.8;
 }
 
 .footer-links h5,
@@ -85,9 +72,28 @@
     opacity: 1;
 }
 
-.footer-contact p {
-    font-size: 14px;
-    opacity: 0.8;
+.gradient-text {
+    background: linear-gradient(45deg, #2E7D32, #FFB74D);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFB74D;
+    transform: scale(1.2);
 }
 
 .footer-bottom {
@@ -116,5 +122,10 @@
 
     .footer-bottom {
         font-size: 12px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+        margin: 0 8px;
     }
 }

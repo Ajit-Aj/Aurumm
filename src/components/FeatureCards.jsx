@@ -33,13 +33,7 @@ const features = [
 ];
 
 const FeatureCards = () => {
-    useEffect(() => {
-        AOS.init({ duration: 1000, once: true });
-
-        setTimeout(() => {
-            AOS.refresh();
-        }, 500);
-    }, []);
+ 
 
     return (
         <div className="feature-container">

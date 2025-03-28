@@ -29,14 +29,14 @@ section::before {
 }
 
 .maintopic h3 {
-    color: #ffffffde;
+    color: #605a5a;
     font-size: 24px;
     font-weight: bold;
 }
 
 .maintopic p {
     font-size: 16px;
-    color: #ffffffde;
+    color: #817e7ede;
 }
 
 .subtopics {
