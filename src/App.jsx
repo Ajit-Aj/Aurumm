@@ -83,16 +83,14 @@ const App = () => {
         ))}
 
       <Router>
-        <div data-aos="zoom-out-up"  >
-          <Navbar />
-          <div className="container mt-4">
-            <Routes>
-              <Route path="/" element={<Home />} />
-            </Routes>
-          </div>
-          <Footer />
+        <Navbar />
+        <div data-aos="zoom-out-up" className="container mt-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
         </div>
-      </Router>
+        <Footer />
+      </Router >
     </>
   );
 };
